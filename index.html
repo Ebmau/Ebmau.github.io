@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Concours</title>
-  </head>
-  <body>
-    <h1> Concours de Kiffer </h1>
-    <nav>
-      <ul>
-        <li>Accueil</li>
-        <li>
-          <a href="#form">Formulaire</a>
-        </li>
-      </ul>
-      <header>
-        <h1>Titre: Concours Kiffer</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concours de Kiffer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
 
-        <p>
-          Un concours de coda pour voir qui kiffe le plus. Participez et montrez
-          nos compétences en codage ! Le gagnant sera celui qui aura le plus
-          de kiffs à la fin du concours. et voir combien de fois kiffer est for que moi
-        </p>
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-      </header>
-      <main>
-        <section>
-          <h2>Liste de language appris</h2>
-          <ol>
-            <li>HTML</li>
-            <li>C</li>
-            <li>Python</li>
-        </section>
-        <table border="4" cellpadding="10" cellspacing="4"
-          style="text-align: center"
-          >
-            <!-- thead est pour l'entente du tableau -->
-            <thead>
-              <tr>
-                <th>Moi </th>
-                <th>Kiffer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                
-                  <td>PYTHON</td>
-                  <td>HTML</td>
-  
-              </tr>
-              <tr>
-                  <td>HTML</td>
-                  <td>CSS</td>
-              </tr>
-              <tr>
-                  <td>CSHAP</td>
-                  <td>JavaScript</td>
-            </tbody>
-              
-          </table>
-      </main>
-  </body>
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2575fc;
+      color: white;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#form">Formulaire</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Concours de Kiffer</h1>
+    <p>
+      Un concours de code pour voir qui kiffe le plus ! Participez et montrez
+      vos compétences en codage. Le gagnant sera celui qui aura le plus de kiffs
+      à la fin du concours.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Langages Appris</h2>
+      <ol>
+        <li>HTML</li>
+        <li>C</li>
+        <li>Python</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Comparatif</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Moi</th>
+            <th>Kiffer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PYTHON</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>CSHARP</td>
+            <td>JavaScript</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
 </html>
